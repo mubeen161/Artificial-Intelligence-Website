@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Machine Learning</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+
+            </div>
+            <div class="ml">
+            <div class="slide-row "id="slide">
+                <div class="slide-col">
+                   <div class="user-text">
+                       <p>
+                           Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.Through the use of statistical methods, algorithms are trained to make classifications or predictions, and to uncover key insights in data mining projects.
+                       </p>
+                       <h3>Machine Learning</h3>
+                   </div>
+                   <div class="user-img">
+                       <img src="images/ai-ml.png">
+                   </div>
+               </div>
+               <div class="slide-col">
+                   <div class="user-text">
+                       <p>
+                           Machine learning is important because it gives enterprises a view of trends in customer behavior and operational business patterns, as well as supports the development of new products. </p>
+                       <h3>Machine Learning Goal</h3>
+                   </div>
+                   <div class="user-img">
+                       <img src="images/ml.jpg">
+                   </div>
+               </div><div class="slide-col">
+                   <div class="user-text">
+                       <p>
+                           Machine learning contains a set of algorithms that work on a huge amount of data.Based on the methods and way of learning, machine learning is divided into mainly 3 types   a.Supervised Learning  b.Unsupervised Learning c.Reinforcement Learning</p>
+                       <h3>Types of Machine Learning</h3>
+                   </div>
+                   <div class="user-img">
+                       <img src="images/types.png"></div>>
+               </div><div class="slide-col">
+                   <div class="user-text">
+                       <p>
+                           MMachine learning is a buzzword for today's technology, and it is growing very rapidly day by day. We are using machine learning in our daily life even without knowing it such as Google Maps, Google assistant, Alexa, etc. </p>
+                       <h3>Machine Learning Applications</h3>
+                   </div>
+                   <div class="user-img">
+                       <img src="images/app.png">
+                   </div>
+               </div>
+           </div>
+        </div>
+        </div>
+ 
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide=document.getElementById("slide");
+        btn[0].onclick=function(){
+            slide.style.transform="translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+
+            }
+            this.classList.add("active")
+        }
+        btn[1].onclick=function(){
+            slide.style.transform="translateX(-800px)";
+            
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+
+            }
+            this.classList.add("active")
+        }
+        btn[2].onclick=function(){
+            slide.style.transform="translateX(-1600px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+
+            }
+            this.classList.add("active")
+        }
+        btn[3].onclick=function(){
+            slide.style.transform="translateX(-2400px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+
+            }
+            this.classList.add("active")
+        }
+    </script>
+</body>
+</html>
